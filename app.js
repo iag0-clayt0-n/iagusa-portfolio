@@ -6,5 +6,6 @@ buttons.forEach(button => button.addEventListener('click', () => {
   if (project instanceof HTMLElement) project.hidden = category !== 'all' && project.dataset.project !== category;
  });
  const status = document.querySelector('#filter-status');
- if (status) status.textContent = category === 'all' ? 'Exibindo os dois projetos.' : 'Exibindo um projeto.';
+ const english = document.documentElement.lang === 'en';
+ if (status) status.textContent = category === 'all' ? (english ? 'Showing both projects.' : 'Exibindo os dois projetos.') : (english ? 'Showing one project.' : 'Exibindo um projeto.');
 }));

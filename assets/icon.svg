@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#2f5d46"/><text x="32" y="48" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="54" fill="#f2ede3">i</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="8" fill="#211c14"/>
+  <g stroke="#e9b44c" stroke-width="5" stroke-linecap="round">
+    <line x1="26" y1="15" x2="26" y2="49"/>
+    <line x1="38" y1="15" x2="38" y2="49"/>
+    <line x1="15" y1="26" x2="49" y2="26"/>
+    <line x1="15" y1="38" x2="49" y2="38"/>
+  </g>
+  <circle cx="20" cy="20" r="3.5" fill="none" stroke="#fcfaf3" stroke-width="4"/>
+  <g stroke="#d96c3f" stroke-width="4.5" stroke-linecap="round">
+    <line x1="28.5" y1="28.5" x2="35.5" y2="35.5"/>
+    <line x1="35.5" y1="28.5" x2="28.5" y2="35.5"/>
+  </g>
+</svg>
