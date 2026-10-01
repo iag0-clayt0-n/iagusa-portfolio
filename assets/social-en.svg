@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#f2ede3"/>
+<path d="M64 118H1136M64 545H1136" stroke="#211c14" stroke-width="2"/>
+<text x="64" y="85" fill="#211c14" font-family="DejaVu Serif,serif" font-size="36" font-weight="bold">Iago Clayton</text>
+<text x="1136" y="82" text-anchor="end" fill="#2f5d46" font-family="DejaVu Sans,sans-serif" font-size="18">PORTFOLIO / WEB &amp; MOBILE</text>
+<text x="64" y="225" fill="#625e55" font-family="DejaVu Sans,sans-serif" font-size="20">INFORMATION SYSTEMS STUDENT</text>
+<text x="64" y="320" fill="#211c14" font-family="DejaVu Serif,serif" font-size="72">Web developer</text>
+<text x="64" y="410" fill="#2f5d46" font-family="DejaVu Serif,serif" font-size="72" font-style="italic">in training.</text>
+<text x="64" y="495" fill="#625e55" font-family="DejaVu Sans,sans-serif" font-size="23">Resolvemos · GeraPost · Odyssey</text>
+<text x="64" y="592" fill="#211c14" font-family="DejaVu Sans,sans-serif" font-size="20">iagusa-portfolio.vercel.app/en/</text>
+<circle cx="1114" cy="586" r="12" fill="#a63e1d"/>
+</svg>
