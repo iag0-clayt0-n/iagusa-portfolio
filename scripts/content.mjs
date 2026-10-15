@@ -19,9 +19,9 @@ export const projects = [
     pt: {
       category: "WEB · SERVIÇOS E DEMONSTRAÇÕES",
       status: "Publicado",
-      title: "Da ideia ao pedido de um sistema.",
+      title: "Um site para apresentar serviços e receber pedidos.",
       description:
-        "Site de serviços digitais para pequenos negócios, com demonstrações de loja, padaria e agendamento para barbearia.",
+        "Site de serviços digitais para pequenos negócios. Inclui exemplos de uma loja, uma padaria e um sistema de agendamento para barbearia.",
       contribution:
         "Desenvolvimento das páginas, do formulário de briefing e do fluxo que registra as solicitações para acompanhamento na área administrativa.",
       detail:
@@ -32,7 +32,7 @@ export const projects = [
     en: {
       category: "WEB · SERVICES & DEMOS",
       status: "Live",
-      title: "From an idea to a software brief.",
+      title: "A website to present services and receive requests.",
       description:
         "A digital services website for small businesses, with storefront, bakery and barbershop booking demos.",
       contribution:
@@ -53,7 +53,7 @@ export const projects = [
     pt: {
       category: "WEB · CONTEÚDO COM IA",
       status: "Publicado",
-      title: "Um ponto de partida para o próximo post.",
+      title: "Rascunhos para posts de redes sociais.",
       description:
         "Ferramenta para preparar legendas, carrosséis e roteiros a partir do contexto de um negócio. O conteúdo passa pela revisão de quem publica.",
       contribution:
@@ -66,7 +66,7 @@ export const projects = [
     en: {
       category: "WEB · AI CONTENT",
       status: "Live",
-      title: "A starting point for the next post.",
+      title: "Drafts for social media posts.",
       description:
         "A tool for drafting captions, carousels and scripts from a business brief. Content is reviewed by the person publishing it.",
       contribution:
@@ -87,7 +87,7 @@ export const projects = [
     pt: {
       category: "MOBILE · ROTINA E BEM-ESTAR",
       status: "Em desenvolvimento",
-      title: "Humor, hábitos e foco em um só app.",
+      title: "Um app para acompanhar humor, hábitos e foco.",
       description:
         "Aplicativo que reúne registros de humor, diário, hábitos e temporizador de foco para acompanhar a rotina.",
       contribution:
@@ -100,7 +100,7 @@ export const projects = [
     en: {
       category: "MOBILE · ROUTINE & WELLBEING",
       status: "In development",
-      title: "Mood, habits and focus in one app.",
+      title: "An app for tracking mood, habits and focus.",
       description:
         "An app bringing together mood tracking, journaling, habits and a focus timer to keep track of daily routines.",
       contribution:

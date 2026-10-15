@@ -16,8 +16,8 @@ export function page(language) {
   const url = origin + (en ? "/en/" : "/");
   const title = `${profile.name} — ${t("Desenvolvedor Web em formação", "Web developer in training")}`;
   const description = t(
-    "Estudante de Sistemas de Informação. Conheça meus projetos web e mobile: Resolvemos, GeraPost e Odyssey. Disponível para estágio e oportunidades júnior.",
-    "Information Systems student. Explore my web and mobile projects: Resolvemos, GeraPost and Odyssey. Open to internships and junior roles.",
+    "Sou estudante de Sistemas de Informação e desenvolvo projetos web e mobile, como Resolvemos, GeraPost e Odyssey. Estou buscando estágio ou uma vaga júnior.",
+    "I study Information Systems and build web and mobile projects, including Resolvemos, GeraPost and Odyssey. I’m looking for an internship or junior role.",
   );
   const contacts = [
     ...(profile.email
@@ -73,13 +73,13 @@ export function page(language) {
       <div class="social-links" aria-label="${t("Perfis e contato", "Profiles and contact")}">${contactLinks}</div>
     </div>
     <aside class="project-index" aria-label="${t("Projetos em destaque", "Featured projects")}">
-      <p class="eyebrow">${t("UM RECORTE DO MEU TRABALHO", "A SELECTION OF MY WORK")}</p>
+      <p class="eyebrow">${t("PROJETOS EM DESTAQUE", "FEATURED PROJECTS")}</p>
       ${projects.map((p, i) => `<a href="#${p.id}"><span class="index-number">0${i + 1}</span><span><strong>${p.name}</strong><small>${p[language].category}</small></span><span aria-hidden="true">↗</span></a>`).join("")}
-      <p class="index-note">${t("Interfaces, integrações e aplicações em desenvolvimento.", "Interfaces, integrations and applications in development.")}</p>
+      <p class="index-note">${t("Sites, integrações e um app mobile em desenvolvimento.", "Websites, integrations and a mobile app in development.")}</p>
     </aside>
   </section>
   <section class="wrap projects" id="projetos" aria-labelledby="projects-title">
-    <div class="section-top"><div><p class="eyebrow">01 / ${t("NA PRÁTICA", "IN PRACTICE")}</p><h2 id="projects-title">${t("Projetos selecionados", "Selected projects")}<span class="period">.</span></h2></div><p>${t("O problema, a implementação<br>e o que você pode explorar.", "The problem, the implementation<br>and what you can explore.")}</p></div>
+    <div class="section-top"><div><p class="eyebrow">01 / ${t("PROJETOS", "PROJECTS")}</p><h2 id="projects-title">${t("Alguns projetos", "A few projects")}<span class="period">.</span></h2></div><p>${t("O que cada projeto faz e como foi desenvolvido.", "What each project does and how I built it.")}</p></div>
     ${projects
       .map((p, i) => {
         const copy = p[language];
@@ -91,10 +91,10 @@ export function page(language) {
       </article>`;
       })
       .join("")}
-    <div class="more-heading"><h3>${t("Outros projetos", "More projects")}</h3><p>${t("Outras interfaces, tecnologias e estudos.", "Other interfaces, technologies and experiments.")}</p></div>
+    <div class="more-heading"><h3>${t("Outros projetos", "More projects")}</h3><p>${t("Mais alguns projetos em que trabalhei.", "A few more projects I’ve worked on.")}</p></div>
     <div class="more-projects">${additional.map((p) => `<article><h4>${p.name}</h4><p>${p[language]}</p><p class="more-tech">${p.tech}</p>${p.url ? `<a class="text-link" href="${p.url}">${t("Visitar", "Visit")} ${p.name} <span aria-hidden="true">↗</span></a>` : `<span class="development-note">${t("Em desenvolvimento · código privado", "In development · private source")}</span>`}</article>`).join("")}</div>
   </section>
-  <section class="about" id="sobre" aria-labelledby="about-title"><div class="wrap about-grid"><div><p class="eyebrow">02 / ${t("SOBRE MIM", "ABOUT ME")}</p><h2 id="about-title">${t("Interface, código<br><em>e aprendizado.</em>", "Interfaces, code<br><em>and learning.</em>")}</h2></div><div class="about-copy"><p class="large-copy">${t("Estudante de Sistemas de Informação, com foco em desenvolvimento web e mobile.", "Information Systems student focused on web and mobile development.")}</p><p>${t("Nos meus projetos, trabalho com interfaces, formulários, APIs e persistência de dados. Uso React e TypeScript na web, e Flutter e Dart no mobile.", "My projects involve interfaces, forms, APIs and data persistence. I use React and TypeScript for the web, and Flutter and Dart for mobile.")}</p><p>${t("Busco uma oportunidade de estágio ou júnior para contribuir com projetos em equipe e aprofundar minha prática de desenvolvimento.", "I’m looking for an internship or junior role to contribute to team projects and develop my software engineering skills.")}</p></div></div></section>
+  <section class="about" id="sobre" aria-labelledby="about-title"><div class="wrap about-grid"><div><p class="eyebrow">02 / ${t("SOBRE MIM", "ABOUT ME")}</p><h2 id="about-title">${t("Desenvolvimento<br><em>web e mobile.</em>", "Web and mobile<br><em>development.</em>")}</h2></div><div class="about-copy"><p class="large-copy">${t("Estudo Sistemas de Informação e gosto de tirar ideias do papel criando sites e aplicativos.", "I study Information Systems and enjoy turning ideas into websites and apps.")}</p><p>${t("Nos meus projetos, trabalho com interfaces, formulários, APIs e dados. Uso React e TypeScript na web e Flutter e Dart no mobile.", "My projects involve interfaces, forms, APIs and data. I use React and TypeScript for the web, and Flutter and Dart for mobile.")}</p><p>${t("Estou buscando estágio ou uma vaga júnior para trabalhar em equipe e continuar aprendendo no dia a dia.", "I’m looking for an internship or junior role where I can work with a team and keep learning on the job.")}</p></div></div></section>
   <section class="wrap contact" id="contato" aria-labelledby="contact-title"><p class="eyebrow">03 / ${t("CONTATO", "CONTACT")}</p><h2 id="contact-title">${t("Vamos conversar<br><em>sobre a oportunidade?</em>", "Let’s talk<br><em>about the opportunity.</em>")}</h2><div class="contact-bottom"><p>${t("Disponível para estágio e oportunidades júnior<br>em desenvolvimento web e mobile.", "Open to internships and junior roles<br>in web and mobile development.")}</p><div class="contact-actions"><a class="button" href="${escape(primaryContact)}">${primaryLabel} <span aria-hidden="true">↗</span></a>${resume}</div></div><div class="social-links">${contactLinks}</div></section>
 </main>
 <footer class="wrap"><a class="brand" href="#">${profile.name}<span aria-hidden="true">✳</span></a><p>${t("PORTFÓLIO / DESENVOLVIMENTO WEB E MOBILE", "PORTFOLIO / WEB & MOBILE DEVELOPMENT")}</p><a href="#">${t("Voltar ao topo", "Back to top")} ↑</a></footer>
