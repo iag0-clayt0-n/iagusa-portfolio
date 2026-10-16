@@ -60,7 +60,7 @@ export function page(language) {
 <body>
 <a class="skip" href="#conteudo">${t("Pular para o conteúdo", "Skip to content")}</a>
 <header class="wrap masthead">
-  <a class="brand" href="${en ? "/en/" : "/"}">${profile.name}<span aria-hidden="true">✳</span></a>
+  <a class="brand" href="${en ? "/en/" : "/"}">${profile.name}<span class="brand-mark" aria-hidden="true">&lt;/&gt;</span></a>
   <nav aria-label="${t("Navegação principal", "Main navigation")}"><a href="#projetos">${t("Projetos", "Projects")}</a><a href="#sobre">${t("Sobre", "About")}</a><a href="#contato">${t("Contato", "Contact")}</a></nav>
   <div class="language-switch" aria-label="${t("Idioma", "Language")}"><a href="/" lang="pt-BR" hreflang="pt-BR" ${!en ? 'aria-current="page"' : ""}>PT</a><a href="/en/" lang="en" hreflang="en" ${en ? 'aria-current="page"' : ""}>EN</a></div>
 </header>
@@ -97,6 +97,6 @@ export function page(language) {
   <section class="about" id="sobre" aria-labelledby="about-title"><div class="wrap about-grid"><div><p class="eyebrow">02 / ${t("SOBRE MIM", "ABOUT ME")}</p><h2 id="about-title">${t("Desenvolvimento<br><em>web e mobile.</em>", "Web and mobile<br><em>development.</em>")}</h2></div><div class="about-copy"><p class="large-copy">${t("Estudo Sistemas de Informação e gosto de tirar ideias do papel criando sites e aplicativos.", "I study Information Systems and enjoy turning ideas into websites and apps.")}</p><p>${t("Nos meus projetos, trabalho com interfaces, formulários, APIs e dados. Uso React e TypeScript na web e Flutter e Dart no mobile.", "My projects involve interfaces, forms, APIs and data. I use React and TypeScript for the web, and Flutter and Dart for mobile.")}</p><p>${t("Estou buscando estágio ou uma vaga júnior para trabalhar em equipe e continuar aprendendo no dia a dia.", "I’m looking for an internship or junior role where I can work with a team and keep learning on the job.")}</p></div></div></section>
   <section class="wrap contact" id="contato" aria-labelledby="contact-title"><p class="eyebrow">03 / ${t("CONTATO", "CONTACT")}</p><h2 id="contact-title">${t("Vamos conversar<br><em>sobre a oportunidade?</em>", "Let’s talk<br><em>about the opportunity.</em>")}</h2><div class="contact-bottom"><p>${t("Disponível para estágio e oportunidades júnior<br>em desenvolvimento web e mobile.", "Open to internships and junior roles<br>in web and mobile development.")}</p><div class="contact-actions"><a class="button" href="${escape(primaryContact)}">${primaryLabel} <span aria-hidden="true">↗</span></a>${resume}</div></div><div class="social-links">${contactLinks}</div></section>
 </main>
-<footer class="wrap"><a class="brand" href="#">${profile.name}<span aria-hidden="true">✳</span></a><p>${t("PORTFÓLIO / DESENVOLVIMENTO WEB E MOBILE", "PORTFOLIO / WEB & MOBILE DEVELOPMENT")}</p><a href="#">${t("Voltar ao topo", "Back to top")} ↑</a></footer>
+<footer class="wrap"><a class="brand" href="#">${profile.name}<span class="brand-mark" aria-hidden="true">&lt;/&gt;</span></a><p>${t("PORTFÓLIO / DESENVOLVIMENTO WEB E MOBILE", "PORTFOLIO / WEB & MOBILE DEVELOPMENT")}</p><a href="#">${t("Voltar ao topo", "Back to top")} ↑</a></footer>
 </body></html>`;
 }

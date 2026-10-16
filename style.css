@@ -66,6 +66,12 @@ summary:focus-visible {
   color: var(--orange);
   margin-left: 9px;
 }
+.brand .brand-mark {
+  display: inline-block;
+  font: 700 0.55em/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: -0.1em;
+  vertical-align: 0.14em;
+}
 .masthead nav {
   display: flex;
   gap: 28px;
