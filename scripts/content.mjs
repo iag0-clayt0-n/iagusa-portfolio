@@ -81,7 +81,7 @@ export const projects = [
     id: "odyssey",
     name: "Odyssey",
     type: "app",
-    url: "https://iagusa.space",
+    url: "",
     image: "",
     technologies: ["Flutter", "Dart", "Riverpod", "Hive", "Supabase"],
     pt: {
@@ -116,7 +116,7 @@ export const projects = [
 export const additional = [
   {
     name: "Iagusa Center",
-    url: "https://iagusa.space",
+    url: "",
     tech: "Next.js · React · TypeScript · PostgreSQL",
     pt: "Site de apresentação do Odyssey, com blog e fórum. Conteúdo em português e inglês.",
     en: "The Odyssey website, with a blog and forum. Content in Portuguese and English.",
