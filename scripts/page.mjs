@@ -12,7 +12,7 @@ export function page(language) {
   const en = language === "en";
   /** @param {string} pt @param {string} english */
   const t = (pt, english) => (en ? english : pt);
-  const origin = "https://iagusa-portfolio.vercel.app";
+  const origin = process.env.SITE_URL || "https://iagusa-portfolio.netlify.app";
   const url = origin + (en ? "/en/" : "/");
   const title = `${profile.name} — ${t("Desenvolvedor Web em formação", "Web developer in training")}`;
   const description = t(

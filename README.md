@@ -2,7 +2,7 @@
 
 Este é o código do meu portfólio, onde apresento alguns projetos web e mobile que desenvolvi.
 
-O site está no ar em [iagusa-portfolio.vercel.app](https://iagusa-portfolio.vercel.app/) e também tem uma [versão em inglês](https://iagusa-portfolio.vercel.app/en/).
+O site está no ar em [iagusa-portfolio.netlify.app](https://iagusa-portfolio.netlify.app/) e também tem uma [versão em inglês](https://iagusa-portfolio.netlify.app/en/).
 
 ## Rodar localmente
 
@@ -22,4 +22,4 @@ O site abre em http://127.0.0.1:3017. Para gerar os arquivos de produção, use 
 - `style.css`: estilos do site.
 - `assets/`: imagens e ícones usados no portfólio.
 
-O site é gerado como HTML estático e publicado na Vercel.
+O site é gerado como HTML estático e publicado na Netlify.
